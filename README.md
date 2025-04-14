@@ -84,7 +84,7 @@ Each response is evaluated using:
 # Resources
 
 - Document: The Adventures of Sherlock Holmes – Project Gutenberg
-- Notebook: Colab Notebook Link ([Insert your actual Colab link here](https://colab.research.google.com/drive/1wePHsry_54V3aa7c7JjYvhbRiMYzKhCZ#scrollTo=oTJJEsePycak))
+- Notebook: Colab Notebook Link (https://colab.research.google.com/drive/1wePHsry_54V3aa7c7JjYvhbRiMYzKhCZ#scrollTo=oTJJEsePycak)
 - Groq API: Groq Cloud
 
 # Reasoning Behind Choices
