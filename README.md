@@ -8,7 +8,25 @@ The goal of this project is to build an intelligent, high-performance Generative
 
 # Architecture Overview
 
-```mermaid graph LR A[Text File Upload] --> B[Chunking the Document] B --> C[Sentence Embedding (MiniLM)] C --> D[FAISS Vector Indexing] D --> E[Query Input] E --> F[Top-k Chunk Retrieval] F --> G[Prompt Construction with Context] G --> H[Groq LLM (LLaMA3-8B-8192)] H --> I[Answer Generation (Citation / Summary / Simplified)] I --> J[Response Display + Evaluation Scoring] ```
+1. 📄 Text File Upload
+   └── Split into chunks (~500 tokens each)
+2. 🧠 Sentence Embedding
+   └── Using MiniLM (sentence-transformers) to embed text chunks
+3. 📦 FAISS Vector Indexing
+   └── Store and index chunk embeddings for efficient retrieval
+4. 🔎 Query Input
+   └── User asks a question
+5. 🎯 Top-k Chunk Retrieval
+   └── Most relevant chunks retrieved from vector index
+6. 🧾 Prompt Construction
+   └── Combine retrieved chunks + user query into a single prompt
+7. 🤖 Groq LLM (LLaMA3-8B-8192)
+   └── Generate an intelligent response with:
+       - ✅ Citations
+       - ✅ Summarization
+       - ✅ Simplified answers (ELI5)
+8. 💬 Response Display
+   └── Show final answer and evaluation score
 
 ### Tools & Technologies Used
 
