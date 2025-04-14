@@ -61,10 +61,10 @@ Responses include citation references such as “(see Chunk 12)” to show the s
 
 # Evaluation Metrics
 
-Each response is evaluated using:
-Faithfulness Score (0–10): Based on cosine similarity with a reference answer
-Citation Score (0 or 10): Based on whether proper chunk references were included
-Overall Score = (Faithfulness + Citation) / 2
+1. Each response is evaluated using:
+2. Faithfulness Score (0–10): Based on cosine similarity with a reference answer
+3. Citation Score (0 or 10): Based on whether proper chunk references were included
+4. Overall Score = (Faithfulness + Citation) / 2
 
 # Sample Queries for Testing
 
@@ -76,10 +76,10 @@ Overall Score = (Faithfulness + Citation) / 2
 
 # How to Run
 
-Open the Google Colab notebook (see link below)
-Upload the Sherlock Holmes text file
-Follow each step cell-by-cell from installation to interaction
-Use the chatbot via ask_chatbot("your question")
+1. Open the Google Colab notebook (see link below)
+2. Upload the Sherlock Holmes text file
+3. Follow each step cell-by-cell from installation to interaction
+4. Use the chatbot via ask_chatbot("your question")
 
 # Resources
 
@@ -89,10 +89,10 @@ Use the chatbot via ask_chatbot("your question")
 
 # Reasoning Behind Choices
 
-Groq AI was chosen for its ultra-fast, high-performance LLM capabilities.
-FAISS + MiniLM enables efficient and compact semantic search over long documents.
-The modular design (chunking → embedding → retrieval → prompt building → LLM) ensures flexibility, scalability, and multi-mode extensions like simplification, summarization, and persona.
-Citation and evaluation metrics provide transparency and measurable reliability.
+1. Groq AI was chosen for its ultra-fast, high-performance LLM capabilities.
+2. FAISS + MiniLM enables efficient and compact semantic search over long documents.
+3. The modular design (chunking → embedding → retrieval → prompt building → LLM) ensures flexibility, scalability, and multi-mode extensions like simplification, summarization, and persona.
+4. Citation and evaluation metrics provide transparency and measurable reliability.
 
 # Bonus Features Implemented
 
