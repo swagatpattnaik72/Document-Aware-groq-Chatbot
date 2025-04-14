@@ -8,7 +8,7 @@ The goal of this project is to build an intelligent, high-performance Generative
 
 # Architecture Overview
 
-<pre> ```mermaid graph LR A[Text File Upload] --> B[Chunking the Document] B --> C[Sentence Embedding (MiniLM)] C --> D[FAISS Vector Indexing] D --> E[Query Input] E --> F[Top-k Chunk Retrieval] F --> G[Prompt Construction with Context] G --> H[Groq LLM (LLaMA3-8B-8192)] H --> I[Answer Generation with Optional Citation / Summarization / Simplification] I --> J[Response Display + Evaluation Scoring] ``` </pre>
+<pre> ```mermaid graph LR A[Text File Upload] --> B[Chunking the Document] B --> C[Sentence Embedding (MiniLM)] C --> D[FAISS Vector Indexing] D --> E[Query Input] E --> F[Top-k Chunk Retrieval] F --> G[Prompt Construction with Context] G --> H[Groq LLM (LLaMA3-8B-8192)] H --> I[Answer Generation (Citation / Summary / Simplified)] I --> J[Response Display + Evaluation Scoring] ``` </pre>
 
 ### Tools & Technologies Used
 
