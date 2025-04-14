@@ -9,24 +9,24 @@ The goal of this project is to build an intelligent, high-performance Generative
 # Architecture Overview
 
 1. 📄 Text File Upload
-   └── Split into chunks (~500 tokens each)
+   - Split into chunks (~500 tokens each)
 2. 🧠 Sentence Embedding
-   └── Using MiniLM (sentence-transformers) to embed text chunks
+   - Using MiniLM (sentence-transformers) to embed text chunks
 3. 📦 FAISS Vector Indexing
-   └── Store and index chunk embeddings for efficient retrieval
+   - Store and index chunk embeddings for efficient retrieval
 4. 🔎 Query Input
-   └── User asks a question
+   - User asks a question
 5. 🎯 Top-k Chunk Retrieval
-   └── Most relevant chunks retrieved from vector index
+   - Most relevant chunks retrieved from vector index
 6. 🧾 Prompt Construction
-   └── Combine retrieved chunks + user query into a single prompt
+   - Combine retrieved chunks + user query into a single prompt
 7. 🤖 Groq LLM (LLaMA3-8B-8192)
-   └── Generate an intelligent response with:
+   - Generate an intelligent response with:
        - ✅ Citations
        - ✅ Summarization
        - ✅ Simplified answers (ELI5)
 8. 💬 Response Display
-   └── Show final answer and evaluation score
+   - Show final answer and evaluation score
 
 ### Tools & Technologies Used
 
