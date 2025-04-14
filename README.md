@@ -1,10 +1,10 @@
-# Groq-Powered Document-Aware Chatbot
+# Groq-Powered Sherlock Holmes Chatbot
 
 Document Used: The Adventures of Sherlock Holmes by Arthur Conan Doyle (Public Domain via Project Gutenberg)(https://www.gutenberg.org/ebooks/1661)
 
 # Objective
 
-The goal of this project is to build an intelligent, high-performance Generative AI chatbot capable of understanding and interacting with a long-form document (100+ pages) using Groq AI. This solution supports contextual Q&A, summarization, citation-based answers, memory for multi-turn conversations, and evaluation metrics.
+This project builds an intelligent AI chatbot using Groq AI that can understand, summarize, and interact with a long-form document (in this case, The Adventures of Sherlock Holmes). The chatbot allows users to ask natural-language questions and receive accurate, context-aware, and well-cited answers.
 
 # Architecture Overview
 
