@@ -8,20 +8,9 @@ The goal of this project is to build an intelligent, high-performance Generative
 
 # Architecture Overview
 
-graph LR
-    A[Text File Upload] --> B[Chunking the Document]
-    B --> C[Sentence Embedding (MiniLM)]
-    C --> D[FAISS Vector Indexing]
-    D --> E[Query Input]
-    E --> F[Top-k Chunk Retrieval]
-    F --> G[Prompt Construction with Context]
-    G --> H[Groq LLM (LLaMA3-8B-8192)]
-    H --> I[Answer Generation with Optional Citation / Summarization / Simplification]
-    I --> J[Response Display + Evaluation Scoring]
+<pre> ```mermaid graph LR A[Text File Upload] --> B[Chunking the Document] B --> C[Sentence Embedding (MiniLM)] C --> D[FAISS Vector Indexing] D --> E[Query Input] E --> F[Top-k Chunk Retrieval] F --> G[Prompt Construction with Context] G --> H[Groq LLM (LLaMA3-8B-8192)] H --> I[Answer Generation with Optional Citation / Summarization / Simplification] I --> J[Response Display + Evaluation Scoring] ``` </pre>
 
-# Tools & Technologies Used
-
-### 🛠️ Tools & Technologies Used
+### Tools & Technologies Used
 
 | Component                | Tool/Library                        | Purpose                                                  |
 |--------------------------|-------------------------------------|----------------------------------------------------------|
@@ -35,18 +24,18 @@ graph LR
 
 # Core Features
 
-✅ 1. Document Chunking
+1. Document Chunking
 Splits the 100+ page document into manageable text chunks (~500 tokens) for embedding and retrieval.
-✅ 2. Sentence Embeddings
+2. Sentence Embeddings
 Uses all-MiniLM-L6-v2 from sentence-transformers to encode both document chunks and user queries.
-✅ 3. Vector Search with FAISS
+3. Vector Search with FAISS
 Indexes the document embeddings and retrieves the most relevant chunks for each user query.
-✅ 4. Groq-Powered Q&A
+4. Groq-Powered Q&A
 Queries are answered using Groq’s LLaMA3 model by combining user input with retrieved context chunks.
-✅ 5. Citation Support
+5. Citation Support
 Responses include citation references such as “(see Chunk 12)” to show the source text.
 
-✅ 6. Special Modes
+6. Special Modes
 🔍 Summarization on demand
 🧒 "Explain like I'm 5" mode
 🧠 Persona Mode (Sherlock Holmes style)
