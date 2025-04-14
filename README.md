@@ -61,10 +61,10 @@ Responses include citation references such as “(see Chunk 12)” to show the s
 
 # Evaluation Metrics
 
-1. Each response is evaluated using:
-2. Faithfulness Score (0–10): Based on cosine similarity with a reference answer
-3. Citation Score (0 or 10): Based on whether proper chunk references were included
-4. Overall Score = (Faithfulness + Citation) / 2
+Each response is evaluated using:
+- Faithfulness Score (0–10): Based on cosine similarity with a reference answer
+- Citation Score (0 or 10): Based on whether proper chunk references were included
+- Overall Score = (Faithfulness + Citation) / 2
 
 # Sample Queries for Testing
 
