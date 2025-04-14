@@ -68,11 +68,11 @@ Overall Score = (Faithfulness + Citation) / 2
 
 # Sample Queries for Testing
 
-Who is Irene Adler?
-What is the story "A Scandal in Bohemia" about?
-Who hired Sherlock Holmes in the Red-Headed League?
-Explain like I'm 5: Who is Sherlock Holmes?
-Summarize The Blue Carbuncle
+1. Who is Irene Adler?
+2. What is the story "A Scandal in Bohemia" about?
+3. Who hired Sherlock Holmes in the Red-Headed League?
+4. Explain like I'm 5: Who is Sherlock Holmes?
+5. Summarize The Blue Carbuncle
 
 # How to Run
 
