@@ -8,37 +8,37 @@ The goal of this project is to build an intelligent, high-performance Generative
 
 # Architecture Overview
 
-1. 📄 Text File Upload
+1. Text File Upload
    - Split into chunks (~500 tokens each)
-2. 🧠 Sentence Embedding
+2. Sentence Embedding
    - Using MiniLM (sentence-transformers) to embed text chunks
-3. 📦 FAISS Vector Indexing
+3. FAISS Vector Indexing
    - Store and index chunk embeddings for efficient retrieval
-4. 🔎 Query Input
+4. Query Input
    - User asks a question
-5. 🎯 Top-k Chunk Retrieval
+5. Top-k Chunk Retrieval
    - Most relevant chunks retrieved from vector index
-6. 🧾 Prompt Construction
+6. Prompt Construction
    - Combine retrieved chunks + user query into a single prompt
-7. 🤖 Groq LLM (LLaMA3-8B-8192)
+7. Groq LLM (LLaMA3-8B-8192)
    - Generate an intelligent response with:
-       - ✅ Citations
-       - ✅ Summarization
-       - ✅ Simplified answers (ELI5)
-8. 💬 Response Display
+       - Citations
+       - Summarization
+       - Simplified answers (ELI5)
+8. Response Display
    - Show final answer and evaluation score
 
 ### Tools & Technologies Used
 
 | Component                | Tool/Library                        | Purpose                                                  |
 |--------------------------|-------------------------------------|----------------------------------------------------------|
-| 💬 LLM Backend           | Groq AI (LLaMA3-8B-8192)            | Fast and efficient LLM-based responses                  |
-| 📄 Document Format       | `.txt`                              | Long-form fictional novel                               |
-| 📐 Embedding Model       | sentence-transformers (MiniLM)      | Generate semantic vector embeddings                     |
-| 📦 Vector Store          | FAISS                               | For fast top-k similarity search                        |
-| 🤖 Interface             | Google Colab (Notebook UI)          | Interactive chatbot interface                           |
-| 📊 Evaluation            | scikit-learn & Cosine Similarity    | Score model response vs. ground truth                   |
-| 🧠 Memory                | Manual conversation history         | For multi-turn interaction memory                       |
+| LLM Backend              | Groq AI (LLaMA3-8B-8192)            | Fast and efficient LLM-based responses                  |
+| Document Format          | `.txt`                              | Long-form fictional novel                               |
+| Embedding Model          | sentence-transformers (MiniLM)      | Generate semantic vector embeddings                     |
+| Vector Store             | FAISS                               | For fast top-k similarity search                        |
+| Interface                | Google Colab (Notebook UI)          | Interactive chatbot interface                           |
+| Evaluation               | scikit-learn & Cosine Similarity    | Score model response vs. ground truth                   |
+| Memory                   | Manual conversation history         | For multi-turn interaction memory                       |
 
 # Core Features
 
@@ -54,10 +54,10 @@ Queries are answered using Groq’s LLaMA3 model by combining user input with re
 Responses include citation references such as “(see Chunk 12)” to show the source text.
 
 6. Special Modes
-🔍 Summarization on demand
-🧒 "Explain like I'm 5" mode
-🧠 Persona Mode (Sherlock Holmes style)
-📊 Evaluation Metrics with Faithfulness & Citation scores
+   - Summarization on demand
+   - "Explain like I'm 5" mode
+   - Persona Mode (Sherlock Holmes style)
+   - Evaluation Metrics with Faithfulness & Citation scores
 
 # Evaluation Metrics
 
@@ -83,9 +83,9 @@ Responses include citation references such as “(see Chunk 12)” to show the s
 
 # Resources
 
-📘 Document: The Adventures of Sherlock Holmes – Project Gutenberg
-📁 Notebook: Colab Notebook Link (Insert your actual Colab link here)
-🤖 Groq API: Groq Cloud
+- Document: The Adventures of Sherlock Holmes – Project Gutenberg
+- Notebook: Colab Notebook Link (Insert your actual Colab link here)
+- Groq API: Groq Cloud
 
 # Reasoning Behind Choices
 
@@ -96,9 +96,9 @@ Responses include citation references such as “(see Chunk 12)” to show the s
 
 # Bonus Features Implemented
 
-✅ Summarization on demand
-✅ Explain Like I’m 5 mode
-✅ Persona Mode (Sherlock style)
-✅ Evaluation Scoring Function
-✅ Proper source referencing (chunk citations)
-✅ Multi-turn memory support
+- Summarization on demand
+- Explain Like I’m 5 mode
+- Persona Mode (Sherlock style)
+- Evaluation Scoring Function
+- Proper source referencing (chunk citations)
+- Multi-turn memory support
